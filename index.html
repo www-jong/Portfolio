@@ -22,9 +22,9 @@
         </div>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item"><a class="nav-link" href="#frontpage">Frontpage</a></li>
-            <hr>
-            <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+<!--             <li class="nav-item"><a class="nav-link" href="#frontpage">Frontpage</a></li>
+            <hr> -->
+            <li class="nav-item"><a class="nav-link" href="#intro">About</a></li>
             <hr>
             <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
             <hr>
@@ -39,15 +39,16 @@
     <!-- 사이드바 끝 -->
     <div class="container-fluid main">
         <!--메인 콘텐츠-->
-        <main id="frontpage" class="frontpage">
+
+<!--         <main id="frontpage" class="frontpage">
             <div class="col-sm-9 page">
                 안녕하세여
             </div>
-        </main>
+        </main> -->
         <!--자기소개, 스택, 프로젝트..-->
         <section id="intro" class="intro">
             <div class="container section">
-                <div class="col-sm-9 page">
+                <div class="col-mb-9 page">
                     <div class="row constart">
                         About
                     </div>
@@ -97,195 +98,212 @@
 
         <section id="project" class="project">
             <div class="container section">
-                <div class="col-sm-9 page">
+                <div class="col-mb-9 page">
                     <div class="row constart">
                         Project
+                        <div class="container-fluid" style="font-size:15px;">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="card project_card" style="width: 18rem;">
+                                        <img src="./images/project1.jpg" class="card-img-top project_image" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Farm in Sun</h5>
+                                            <p class="card-text">생육환경 경진대회와 함께 준비한 반려식물 커뮤니티 프로젝트입니다.
+                                            </p>
+                                            <a href="https://github.com/www-jong/farm_in_sun_project" class="btn stretched-link" style="background-color:rgba(0,0,0,0);"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                <div class="card project_card" style="width: 18rem;">
+                                    <img src="./images/project2.png" class="card-img-top project_image" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Eatclipse</h5>
+                                        <p class="card-text">배달의 민족 서비스를 Spring legacy를 이용해 웹으로 구현해보았습니다.</p>
+                                        <a href="https://github.com/www-jong/eatclipse" class="btn stretched-link" style="background-color:rgba(0,0,0,0);"></a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section id="skill" class="skill">
-            <div class="container section">
-                <div class="col-mb-9 page">
-                    <div class="row constart">
-                        Skill
-                        <div class="row mb-3">
-                            <div class="container">
-                                <div class="progress" style="height: 20px">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
-                                        style="width:60%">
-                                        <b> Python </b>
-                                    </div>
-                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                                        style="width:35%">
-                                        <b> Java </b>
-                                    </div>
-                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
-                                        style="width: 5%">
-                                        <b> Js </b>
-                                    </div>
+    <section id="skill" class="skill">
+        <div class="container section">
+            <div class="col-mb-9 page">
+                <div class="row constart">
+                    Skill
+                    <div class="row mb-3">
+                        <div class="container">
+                            <div class="progress" style="height: 20px">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
+                                    <b> Python </b>
+                                </div>
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                    style="width:35%">
+                                    <b> Java </b>
+                                </div>
+                                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                    style="width: 5%">
+                                    <b> Js </b>
                                 </div>
                             </div>
                         </div>
-                        <div class="row" style="border-right:2px solid gray;">
-                            <div class="col col-mb-3">
-                                Backend
-                            </div>
-                            <div class="col col-mb-6">
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> Flask </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> Django </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> Springboot </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> MySql </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col col-mb-3" style="border-right:2px solid gray;">
+                            Backend
                         </div>
-                        <hr>
-                        <div class="row" style="border-right:2px solid gray;">
-                            <div class="col col-mb-3">
-                                Frontend
+                        <div class="col col-mb-6">
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> Flask </b>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col col-mb-6">
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> HTML5 </b>
-                                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> Django </b>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> CSS3 </b>
-                                            </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> Springboot </b>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> JavaScript </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> Bootstrap </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="container">
-                                        <div class="progress"
-                                            style="height:20px; background-color: rgb(185, 185, 185);">
-                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
-                                                style="width:50%; height:20px;">
-                                                <b> React? </b>
-                                            </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> MySql </b>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="achieve" class="achieve">
-            <div class="container section">
-                <div class="col-mb-9 page">
-                    <div class="row constart">
-                        achieve
-                    </div>
-                    <div class="row constart" style="font-size:20px">
-                        <div class="row">
-                            <div class="card mb-3" style="width: 18rem;">
-                                <img src="https://mazassumnida.wtf/api/generate_badge?boj=weon1009"
-                                    class="achieve_img card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <div class="row">
-                                    <img src='./images/award.gif' class="icons img-fluid">
-                                    Baekjoon
-                                </div>
-                            </div>
-
+                    <hr>
+                    <div class="row" >
+                        <div class="col col-mb-3" style="border-right:2px solid gray;">
+                            Frontend
                         </div>
-                        <div class="row">
-                            <div class="card mb-3" style="width: 18rem;">
-                                <img src="./images/dacon1.jpg" class="achieve_img card-img-top" alt="...">
-                            </div>
-                            <div class="col">
-                                <div class="row">
-                                    <img src='./images/award.gif' class="icons img-fluid">
-                                    Dacon, 생육 환경 최적화 경진대회에서 알고리즘 1등을 수상했습니다.<br>
-                                    aaa<br>
-                                    굳<br>
-                                    aaa<br>
-
+                        <div class="col col-mb-6">
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> HTML5 </b>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> CSS3 </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> JavaScript </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> Bootstrap </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="container">
+                                    <div class="progress" style="height:20px; background-color: rgb(185, 185, 185);">
+                                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                            style="width:50%; height:20px;">
+                                            <b> React? </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="achieve" class="achieve">
+        <div class="container section">
+            <div class="col-mb-9 page">
+                <div class="row constart">
+                    achieve
+                </div>
+                <div class="row constart" style="font-size:20px">
+                    <div class="row">
+                        <div class="card mb-3" style="width: 18rem;">
+                            <img src="https://mazassumnida.wtf/api/generate_badge?boj=weon1009"
+                                class="achieve_img card-img-top" alt="...">
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img src='./images/award.gif' class="icons img-fluid">
+                                Baekjoon
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="card mb-3" style="width: 18rem;">
+                            <img src="./images/dacon1.jpg" class="achieve_img card-img-top" alt="...">
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img src='./images/award.gif' class="icons img-fluid">
+                                Dacon, 생육 환경 최적화 경진대회에서 알고리즘 1등을 수상했습니다.<br>
+                                aaa<br>
+                                굳<br>
+                                aaa<br>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- 꼬리말-->
     <footer class="footer">
@@ -297,7 +315,7 @@
             </div>
         </div>
     </footer>
-</div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
