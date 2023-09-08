@@ -3,7 +3,6 @@
     padding-top:80px;
 }
 .intro{
-    height:350px;
 }
 .project{
     height:350px;
@@ -11,28 +10,52 @@
 .stack{
     height:350px;
 }
-.skill{
-    height:350px;
-}
-.footer{
-    position:fixed;
-    bottom:0;
-    height:50px;
-}
-@media (max-width: 576px) {
-    .offcanvas-body {
-      background-color: rgb(63, 65, 68);
 
+/* 사이드바 */
+@media (max-width: 575px) {
+    .sidenav {
+        display: none;
+      }
+
+    .main{
+        padding-left: 0px;
     }
-    .nav-link{
-        color:rgb(175, 174, 174);
+    .constart{
+        font-size:40px;
+        margin-left:5px;
+        margin-bottom: 5px;
+        color:rgb(197, 195, 199);
+        
+    }
+  }
+  @media (min-width: 576px) {
+    .sidenav {
+        background-color: #302e2e;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        margin-left: -20px;
+        padding-right:0;
+        }
+    .main{
+        padding-left: 250px;
+    }
+    .constart{
+        font-size:40px;
+        margin-left:20px;
+        margin-bottom: 5px;
+        color:rgb(197, 195, 199);
+        
     }
   }
 
-.offcanvas{
-    width:300px !important;
-    font-weight: 700;
-    color:white;
+/* 본문 */
+.page {
+margin-top:50px;
+}
+    
+/* footer */
+footer {
 }
 .profile_image{
     width:50%;
@@ -41,10 +64,52 @@
     display:block;
     margin: auto;
     object-fit: cover;
+    margin-bottom: 20px;
 }
-.offcanvas-header{
-background-image: url(./images/background_image.jpg);
-background-size:cover;
-color:white;
+.profile_image2{
+    width:90%;
+    border-radius: 90%;
+    margin: auto;
+}
+.user-logo{
+    text-align:center;
+    margin-bottom: 50px;
+    background-image: url(./images/background_image.jpg);
+    background-size:cover;
+    color:white;
+    height:20%;
 }
 
+.icons{
+    height:30px;
+    width:auto;
+}
+
+.nav-link{
+    color:rgb(134, 134, 134);
+    margin-left:15px;
+}
+
+
+.achieve_img{
+    margin: auto;
+}
+
+.section{
+    margin-left:10px;
+}
+
+.card_content{
+    font-size:20px;
+}
+
+
+.container{
+    border:3px solid pink;
+}
+.row{
+    border:3px solid rgb(255, 0, 43);
+}
+.col{
+    border:3px solid rgb(0, 4, 255);
+}

@@ -4,84 +4,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
 
-<body>
+<body style="background-color: rgba(22, 22, 22, 0.932); color:rgb(158, 158, 158);">
     <!-- 메뉴, 메인콘텐츠, 자기소개, 기술스택, 프로젝트, 연락처, 꼬리말-->
 
-    <!--네비바-->
-    <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top" style="background-color: #d6e6e34f;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">원종</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header bg-wrap text-center py-4">
-                    <div class="user-logo">
-                    <img src="./images/profile_image.jpg" class="profile_image img-fluid">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wonjong</h5>
+    <!-- 사이드바 -->
+    <nav class="col-sm-3 sidenav navbar-expand-sm bg-">
+        <div class="user-logo">
+            <img src="./images/profile_image.png" class="profile_image img-fluid">
+            <h4>원종현</h4>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item"><a class="nav-link" href="#frontpage">Frontpage</a></li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" href="#skill">Skill</a></li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" href="#achieve">Achieve</a></li>
+            <hr>
+            <li class="nav-item"><a class="nav-link" href="#footer">Footer</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <!-- 사이드바 끝 -->
+    <div class="container-fluid main">
+        <!--메인 콘텐츠-->
+        <main id="frontpage" class="frontpage">
+            <div class="col-sm-9 page">
+                안녕하세여
+            </div>
+        </main>
+        <!--자기소개, 스택, 프로젝트..-->
+        <section id="intro" class="intro">
+            <div class="container section">
+                <div class="col-sm-9 page">
+                    <div class="row constart">
+                        About
                     </div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" onClick="location.href='#frontpage'" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Frontpage</a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick="location.href='#intro'" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Intro</a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick="location.href='#project'" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Project</a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick="location.href='#stack'" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Stack</a>
-                        </li>
-                        <hr>
-                        <li class="nav-item">
-                            <a class="nav-link" onClick="location.href='#skill'" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Skills</a>
-                        </li>
-                        <hr>
-                    </ul>
+                    <div class="row constart">
+                        <div class="card mb-3" style="width: 18rem;">
+                            <img src="./images/profile_image.png" class="profile_image2 card-img-top" alt="...">
+                        </div>
+                        <div class="col card_content">
+                            <div class="row">
+                                <img src='./images/man.gif' class="icons img-fluid">
+                                원종현
+                            </div>
+                            <div class="row">
+                                <img src='./images/birth-control-pills.gif' class="icons img-fluid">
+                                1997.12.8
+                            </div>
+                            <div class="row">
+                                <img src='./images/map.gif' class="icons img-fluid">
+                                울산광역시 남구
+                            </div>
+                            <div class="row">
+                                <img src='./images/email.gif' class="icons img-fluid">
+                                weon1009@gmail.com
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <img src='./images/mortarboard.gif' class="icons img-fluid">
+                            </div>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-11">
+                                    부산대학교 화학과
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"></div>
+                                <div class="col-11">
+                                    SSAFY 10th.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!--메인 콘텐츠-->
-    <main id="frontpage" class="frontpage">
-        Frontpage
-    </main>
-    <!--자기소개, 스택, 프로젝트..-->
-    <section id="intro" class="intro">
-        Intro
-    </section>
-    <section id="project" class="project">
-        Project
-    </section>
-    <section id="stack" class="stack">
-        Stack
-    </section>
-    <section id="skill" class="skill">
-        Skills
+        </section>
+
+
+        <section id="project" class="project">
+            <div class="container section">
+                <div class="col-sm-9 page">
+                    <div class="row constart">
+                        Project
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill" class="skill">
+            <div class="container section">
+                <div class="col-mb-9 page">
+                    <div class="row constart">
+                        Skill
+                        <div class="row mb-3">
+                            <div class="container">
+                                <div class="progress" style="height: 20px">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        style="width:60%">
+                                        <b> Python </b>
+                                    </div>
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                        style="width:35%">
+                                        <b> Java </b>
+                                    </div>
+                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                        style="width: 5%">
+                                        <b> Js </b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="border-right:2px solid gray;">
+                            <div class="col col-mb-3">
+                                Backend
+                            </div>
+                            <div class="col col-mb-6">
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> Flask </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> Django </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> Springboot </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> MySql </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" style="border-right:2px solid gray;">
+                            <div class="col col-mb-3">
+                                Frontend
+                            </div>
+                            <div class="col col-mb-6">
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> HTML5 </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> CSS3 </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> JavaScript </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> Bootstrap </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="container">
+                                        <div class="progress"
+                                            style="height:20px; background-color: rgb(185, 185, 185);">
+                                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                                style="width:50%; height:20px;">
+                                                <b> React? </b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achieve" class="achieve">
+            <div class="container section">
+                <div class="col-mb-9 page">
+                    <div class="row constart">
+                        achieve
+                    </div>
+                    <div class="row constart" style="font-size:20px">
+                        <div class="row">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <img src="https://mazassumnida.wtf/api/generate_badge?boj=weon1009"
+                                    class="achieve_img card-img-top" alt="...">
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <img src='./images/award.gif' class="icons img-fluid">
+                                    Baekjoon
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <img src="./images/dacon1.jpg" class="achieve_img card-img-top" alt="...">
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <img src='./images/award.gif' class="icons img-fluid">
+                                    Dacon, 생육 환경 최적화 경진대회에서 알고리즘 1등을 수상했습니다.<br>
+                                    aaa<br>
+                                    굳<br>
+                                    aaa<br>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- 꼬리말-->
     <footer class="footer">
-        Footer
+        <div class="container section">
+            <div class="col-sm-9 page">
+                <div class="row constart">
+                    Contact
+                </div>
+            </div>
+        </div>
     </footer>
+</div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
