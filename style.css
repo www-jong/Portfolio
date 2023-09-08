@@ -1,0 +1,50 @@
+.frontpage{
+    height:350px;
+    padding-top:80px;
+}
+.intro{
+    height:350px;
+}
+.project{
+    height:350px;
+}
+.stack{
+    height:350px;
+}
+.skill{
+    height:350px;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    height:50px;
+}
+@media (max-width: 576px) {
+    .offcanvas-body {
+      background-color: rgb(63, 65, 68);
+
+    }
+    .nav-link{
+        color:rgb(175, 174, 174);
+    }
+  }
+
+.offcanvas{
+    width:300px !important;
+    font-weight: 700;
+    color:white;
+}
+.profile_image{
+    width:50%;
+    border-radius: 70%;
+    overflow: hidden;
+    display:block;
+    margin: auto;
+    object-fit: cover;
+}
+.offcanvas-header{
+background-image: url(./images/background_image.jpg);
+background-size:cover;
+color:white;
+}
+
